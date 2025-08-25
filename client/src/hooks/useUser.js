@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import api from "../api/axios";
 
 export const useUser = () => {
-  const { data, isLoading, error } = useQuery({
+  const { data, isLoading, error, refetch } = useQuery({
     queryKey: ["user"],
     queryFn: async () => {
       // return api.get("/api/user").then((res) => res.data);
@@ -11,5 +11,5 @@ export const useUser = () => {
     },
   });
 
-  return { data, isLoading, error };
+  return { data, isLoading, error, refetch };
 };

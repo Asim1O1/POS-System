@@ -17,7 +17,7 @@ export default function Home() {
     return (
         <div className="min-h-screen text-black overflow-hidden">
             <div className="fixed top-0 left-0 w-full h-full bg-opacity-50 invert bg-[url('/hero-bg.svg')] bg-cover bg-top-left animate-gradient-x"></div>
-            <div className="backdrop-blur-lg drop-shadow-2xl">
+            <div className="backdrop-blur-lg">
 
                 {/* Hero Section */}
                 <section className="min-h-screen relative px-6 py-20 text-center ">
@@ -225,7 +225,7 @@ export default function Home() {
                             Join thousands of successful merchants who've already made the switch to smarter retail management.
                         </p>
                         <Button className="group bg-gradient-to-l from-primary to-cyan-500 text-xl text-black rounded-full !px-8 !py-8">
-                            Get Started Now - It's Free
+                            Start free trial
                             <ChevronRight className="w-6 h-6 ml-2 group-hover:translate-x-1 transition-transform" />
                         </Button>
                     </div>
@@ -306,7 +306,7 @@ function TestimonialCard({ testimonials, currentIndex }) {
 
 function PriceCard({ title, price, period, originalPrice, highlight, badge, features }) {
     return (
-        <div className={`relative p-8 rounded-3xl transition-all duration-300 hover:scale-105 ${highlight? "border bg-blue-500/10 border-primary": "border border-white/50"
+        <div className={`relative p-8 rounded-3xl transition-all duration-300 hover:scale-105 ${highlight ? "border bg-blue-500/10 border-primary" : "border border-white/50"
             }`}>
             {badge && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">

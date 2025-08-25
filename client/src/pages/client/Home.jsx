@@ -136,7 +136,7 @@ export default function Home() {
                 </section>
 
                 {/* Testimonials */}
-                <section id="testimonials" className=" min-h-180 py-20 px-6">
+                {/* <section id="testimonials" className=" min-h-180 py-20 px-6">
                     <div className="max-w-4xl mx-auto text-center">
                         <h2 className="text-4xl md:text-5xl font-bold mb-4">
                             What Our Customers Say
@@ -169,7 +169,7 @@ export default function Home() {
                             />
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 {/* Pricing Section */}
                 <section id="pricing" className=" py-20 px-6 ">
